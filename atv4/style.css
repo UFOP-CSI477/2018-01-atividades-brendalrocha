@@ -1,0 +1,78 @@
+table {
+	border: 1px solid #cacaca;
+	width: 100%;
+}
+caption{
+	font-size: 18pt;
+	font-family: arial, tahoma;
+}
+h1{
+	text-align: center;
+}
+th, td{
+	text-align: left;
+}
+tfoot{
+	background-color: #cacaca;
+}
+tfoot td{
+	text-align: right;
+	padding: 10px;
+}
+ul {
+    padding:0px;
+    margin:0px;
+    background-color:#880b12;
+    list-style:none;
+    padding: 10px 10px;
+}
+
+ul li { 
+	display: inline;
+	padding: 10px 10px;
+}
+ul li a {
+    display: inline-block;
+	font-size: 14px;
+    background-color:#880b12;
+    color: #fff;
+    text-decoration: none;
+    border-bottom:3px solid #880b12;
+    text-align:  center;
+}
+
+h1, h2, h3, h4, h5, a, label{
+	font-family: "Helvetica Neue", Helvetica;
+}
+h2 {
+	display: inline-block;
+	color: #fff;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+h5{
+	display: inline-block;
+	color: #fff;
+	float: right;
+}
+
+.btn{
+	border-radius: 12px;
+	padding: 10px 24px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-submit{
+	background-color: #4CAF50;
+}
+
+.btn-reset{
+	background-color: #880b12;
+}

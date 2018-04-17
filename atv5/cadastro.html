@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro Sistemas WEB I</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+	<div id="row" class="menu">
+		<div class="col-md-3">
+			<h2>Atividade 5</h2>
+		</div>
+		<div class="col-md-6">
+			<ul>
+				<li><a href="cadastro.html">Cadastrar</a></li>
+				<li><a href="lista.html">Listar</a></li>
+				<li><a href="">Sair</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h5>Brenda Lima Rocha - 13.2.8369</h5>
+		</div>		
+	</div>
+	
+	<div id="row">
+		<h3>Formulário de Cadastro</h3>
+		<form method="post" action="validar.html" class="form-horizontal">
+			<!--  metodo get é submetido diretamente na url metodo POST encapsula os dados e não tem limite da quantidade de informações -->
+
+
+			<div class="panel panel-default">
+		      <div class="panel-heading">
+		      	<div class="form-group">
+					<label class="col-sm-12">Informações Pessoais</label>
+				</div>
+		      </div>
+		      <div class="panel-body">
+		      	<div class="form-group">
+					<label for="nome" class="col-sm-3 control-label">Nome: </label>
+					<div class="col-sm-9">
+						<input type="text" name="nome" placeholder="Nome completo" class="form-control">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="data" class="col-sm-3 control-label">Data de Nascimento: </label>
+					<div class="col-sm-9">
+						<input type="date" name="data" class="form-control">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="cpf" class="col-sm-3 control-label">CPF: </label>
+					<div class="col-sm-9">
+						<input type="text" name="cpf" placeholder="xxx.xxx.xxx.-xx" class="form-control">
+					</div>
+				</div>
+
+				<!--Uso de radio-->
+				<div class="form-group">
+					<label for="genero" class="col-sm-3 control-label">Gênero</label>
+					<div class="col-sm-9">
+						<label for="feminino" class="checkbox-inline">
+							<input type="radio" name="genero" value="F" id="feminino">
+							Feminino
+						</label>
+						<label for="masculino" class="checkbox-inline">
+							<input type="radio" name="genero" value="M" id="masculino">
+							Masculino
+						</label>
+						<label for="naobinario" class="checkbox-inline">
+							<input type="radio" name="genero" value="NB" id="naobinario">
+							Não Listado
+						</label>
+					</div>
+				</div>
+		      </div>
+		    </div>
+
+			<div class="panel panel-default">
+		      	<div class="panel-heading">			
+					<div class="form-group">
+						<label class="col-sm-12">Informações de Contato</label>
+					</div>
+				</div>
+
+				<div class="panel-body">	
+					<div class="form-group">
+						<label for="logradouro" class="col-sm-3 control-label">Logradouro: </label> 
+						<div class="col-sm-9">
+							<input type="text" name="logradouro" class="form-control">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="numero" class="col-sm-3 control-label">Número: </label>
+						<div class="col-sm-9">
+							<div class="col-xs-6" style="padding-left: 0px;">
+								<input type="text" name="numero" class="form-control">
+							</div>
+							<div class="col-xs-6" style="padding-right: 0px;">
+								<input type="text" name="completo" placeholder="Complemento" class="form-control">
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="bairro" class="col-sm-3 control-label">Bairro: </label>
+						<div class="col-sm-9">
+							<input type="text" name="bairro" class="form-control">
+						</div>
+					</div>
+
+					<!--Uso de combobox-->
+					<div class="form-group">
+						<label for="cidade"  class="col-sm-3 control-label">Cidades: </label>
+						<div class="col-sm-9">
+							<select name="cidade" class="form-control">
+								<option value="0">Selecione</option>
+								<option value="1">João Monlevade</option>
+								<option value="2">Itabira</option>
+								<option value="3">Santa Barbara</option>
+								<option value="4">Alvinópolis</option>
+								<option value="5" selected>Belo Horizonte</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="telefone" class="col-sm-3 control-label">Telefone: </label>
+						<div class="col-sm-9">
+							<input type="text" name="telefone" placeholder="(xx) xxxxx-xxxx" class="form-control">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="panel panel-default">
+		      	<div class="panel-heading">
+		      		<div class="form-group">
+						<label class="col-sm-12">Áreas de atuação</label>
+					</div>
+		      	</div>
+		      	<div class="panel-body">
+					<!--Uso de checkbox-->
+					<div class="form-group">
+						<label  class="col-sm-3 control-label">Áreas de Interesse</label>
+						<div class="col-sm-9">
+							<label for="web" class="checkbox-inline">
+								<input type="checkbox" name="area" id="web">
+								WEB
+							</label>
+							<label for="bd" class="checkbox-inline">
+								<input type="checkbox" name="area" id="bd">
+								Banco de Dados
+							</label>
+
+							<label for="redes" class="checkbox-inline">
+								<input type="checkbox" name="area" id="redes">
+								Redes
+							</label>
+							<label for="otimizacao" class="checkbox-inline">
+								<input type="checkbox" name="area" id="otimizacao">
+								Otimização
+							</label>
+						</div>
+					<!--quando for receber os dados do formulario facilita se os names forem todos iguais, pois transforma os checkbox em um array e facilita a verificação, se existem campos marcados ou não, e quais são.-->
+					</div>
+
+					<div class="form-group">
+						<label for="experiencia" class="col-sm-3 control-label">Experiência: </label>
+						<div class="col-sm-9">
+							<input type="range" name="experiencia" min="0" max="10">
+						</div>
+					</div>
+		      	</div>
+		    </div>
+
+			
+			<div class="panel panel-default">
+		      	<div class="panel-heading">
+					<div class="form-group">
+						<label class="col-sm-12">Dados de acesso</label>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<label for="usuario" class="col-sm-3 control-label">Usuário: </label>
+						<div class="col-sm-9">
+							<input type="text" name="usuario" placeholder="usuario@ufop.br" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="senha" class="col-sm-3 control-label">Senha: </label>
+						<div class="col-sm-9">
+							<input type="password" name="senha" class="form-control">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<input type="submit" value="Cadastrar" class="btn btn-success">
+				<input type="reset" value="Limpar" class="btn btn-danger">
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

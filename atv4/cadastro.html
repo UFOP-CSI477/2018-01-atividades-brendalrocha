@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro Sistemas WEB I</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<ul>
+		<li><h2>Atividade 4</h2></li>
+		<li><a href="cadastro.html">Cadastrar</a></li>
+		<li><a href="lista.html">Listar</a></li>
+		<li><a href="">Sair</a></li>
+		<li><h5>Brenda Lima Rocha - 13.2.8369</h5></li>
+	</ul>
+
+	<h1>Formulário de Cadastro</h1>
+	<form method="post" action="validar.html">
+		<!--  metodo get é submetido diretamente na url metodo POST encapsula os dados e não tem limite da quantidade de informações -->
+
+		<label><b>Informações Pessoais</b></label>
+		<br><br>
+
+		<label for="nome">Nome: </label>
+		<input type="text" name="nome" placeholder="Nome completo">
+		<br><br>
+
+		<label for="data">Data de Nascimento: </label>
+		<input type="date" name="data">
+		<br><br>
+
+		<label for="cpf">CPF: </label>
+		<input type="text" name="cpf" placeholder="xxx.xxx.xxx.-xx">
+		<br><br>
+
+		<!--Uso de radio-->
+		<label for="genero">Gênero</label>
+		<br>
+		
+		<input type="radio" name="genero" value="F" id="feminino">
+		<label for="feminino">Feminino</label><br>
+
+		<input type="radio" name="genero" value="M" id="masculino">
+		<label for="nasculino">Masculino</label><br>
+
+		<input type="radio" name="genero" value="NB" id="naobinario">
+		<label for="naobinario">Não Listado</label>
+		<br><br>
+
+		<hr>
+
+		<label><b>Informações de Contato</b></label>
+		<br><br>
+
+		<label for="logradouro">Logradouro: </label> 
+		<input type="text" name="logradouro">
+		<br><br>
+
+		<label for="numero">Número: </label> 
+		<input type="text" name="numero">
+		<input type="text" name="completo" placeholder="Complemento">
+		<br><br>
+
+		<label for="bairro">Bairro: </label> 
+		<input type="text" name="bairro">
+		<br><br>
+
+		<!--Uso de combobox-->
+		<label for="cidade">Cidades: </label>
+		<select name="cidade">
+			<option value="0">Selecione</option>
+			<option value="1">João Monlevade</option>
+			<option value="2">Itabira</option>
+			<option value="3">Santa Barbara</option>
+			<option value="4">Alvinópolis</option>
+			<option value="5" selected>Belo Horizonte</option>
+		</select>
+		<br><br>
+
+		<label for="telefone">Telefone: </label>
+		<input type="text" name="telefone" placeholder="(xx) xxxxx-xxxx">
+		<br><br>
+
+		<hr>
+		
+		<!--Uso de checkbox-->
+		<label><b>Áreas de Interesse</b></label>
+		<br><br>
+
+		<input type="checkbox" name="area" id="web">
+		<label for="web">WEB</label><br>
+
+		<input type="checkbox" name="area" id="bd">
+		<label for="bd">Banco de Dados</label><br>
+
+		<input type="checkbox" name="area" id="redes">
+		<label for="redes">Redes</label><br>
+
+		<input type="checkbox" name="area" id="otimizacao">
+		<label for="otimizacao">Otimização</label>
+		<!--quando for receber os dados do formulario facilita se os names forem todos iguais, pois transforma os checkbox em um array e facilita a verificação, se existem campos marcados ou não, e quais são.-->
+		<br><br>
+
+		<label for="experiencia">Experiência: </label>
+		<input type="range" name="experiencia" min="0" max="10">
+		<br><br>
+
+		<hr>
+
+		<label><b>Dados de acesso</b></label>
+		<br><br>
+		
+		<label for="usuario">Usuário: </label>
+		<input type="text" name="usuario" placeholder="usuario@ufop.br"><br><br>
+		<label for="senha">Senha: </label>
+		<input type="password" name="senha">
+		<br><br>
+
+		<input type="submit" value="Cadastrar" class="btn btn-submit">
+		<input type="reset" value="Limpar" class="btn btn-reset">
+	</form>
+
+</body>
+</html>
