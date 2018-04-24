@@ -1,0 +1,104 @@
+.container{
+	width: 100%;
+    padding: 0;
+}
+
+.menu{
+	margin:0px;
+    background-color:#880b12;
+    padding: 10px 10px;
+    min-height: 55px;
+}
+ul {
+	list-style: none;
+    margin: 7px 0px 0px 0px;
+    text-align: center;
+    padding: 0;
+}
+
+ul li { 
+	display: inline;
+	padding: 0px 30px;
+}
+ul li a {
+    display: inline-block;
+	font-size: 14px;
+    background-color:#880b12;
+    color: #fff;
+    text-decoration: none;
+    border-bottom:3px solid #880b12;
+    text-align: center;
+}
+
+ul li a:hover {
+    display: inline-block;
+	font-size: 14px;
+    background-color:#fff;
+    color: #880b12;
+    text-decoration: none;
+    border-bottom:3px solid #880b12;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, a, label,caption{
+	font-family: "Helvetica Neue", Helvetica;
+}
+h2 {
+	color: #fff;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+}
+h3{
+	text-align: center;
+}
+h5{
+	color: #fff;
+	text-align: center;
+}
+
+caption{
+	font-size: 18pt;
+}
+th, td{
+	text-align: left;
+}
+tfoot td{
+	text-align: right;
+	padding: 10px;
+	}
+
+.table {
+	width: 95%;
+	margin: auto;
+}
+
+.form-horizontal .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.panel-default{
+    width: 65%;
+		margin: auto;
+		margin-bottom: 20px;
+}
+
+.panel-heading{
+	padding: 15px 0 0px 0px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.panel-body{
+	padding: 15px 0px;
+}
+.buttons{
+	width: 65%;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
