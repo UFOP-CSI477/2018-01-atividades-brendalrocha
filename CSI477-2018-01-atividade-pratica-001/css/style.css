@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "Lumen-Full";
+    src: url("./Lumen-Full.ttf");
+}
+
+@font-face {
+    font-family: "FFF_Tusj";
+    src: url("./FFF_Tusj.ttf");
+}
+
+@font-face {
+    font-family: "Glam-Queen";
+    src: url("./Glam-Queen.ttf");
+}
+
+@font-face {
+    font-family: "BrokenChalk";
+    src: url("./BrokenChalk.ttf");
+}
+
+@font-face{
+    font-family: "Gloria";
+    src: url("./GloriaHallelujah.ttf");
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.name-left{
+    font-family: FFF_Tusj;
+    font-size: 45px;
+    float: left;
+    margin-top: 5px;
+}
+
+.name-right{
+    float: right; 
+    font-family: Glam-Queen; 
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../images/infantil2.jpg") no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  color: #07666f;
+}
+
+header.masthead h1 {
+  font-size: 65px;
+  font-family: FFF_Tusj;
+}
+
+header.masthead h1.char {
+    font-size: 65px;
+    font-family: BrokenChalk;
+    color: #ffffff;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+header.masthead h2 {
+    font-size: 40px;
+    font-family: Glam-Queen;
+    margin: 0 110px
+}
+
+header.masthead .mancha {
+    margin: auto;
+    width: 65%;
+    min-height: 310px;
+}
+
+footer{
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.pink{
+    background-color: #fa9dd2;
+}
+
+.yellow{
+    background-color: #f0d100;
+}
+
+.green{
+    background-color: #b1e252;
+}
+
+.orange{
+    background-color: #fa8b22;
+}
+
+.blue{
+    background-color: #14b5c3;
+}
+
+.purple{
+    background-color: #a54fc0;
+}
+
+.title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+    opacity: 1;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.title-yellow{
+    background-color: #d7ab00;
+}
+
+.title-green{
+    background-color: #43951b;
+}
+
+.title-orange{
+    background-color: #d96d06;
+}
+
+.title-blue{
+    background-color: #1376b8;
+}
+
+.title-purple{
+    background: #6c1587;
+}
+
+.thumbnail{
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+.thumbnail .caption h3{
+    font-size: 32px;
+    font-family: Glam-Queen;
+    color: #ffffff;
+}
+
+.thumbnail .caption p{
+    color: #ffffff;
+}
+
+.thumbnail .footer{
+    bottom: 0;
+    display: grid;
+    text-align: center;
+}
+
+.thumbnail .footer a{
+    color: #fff;
+    font-family: Glam-Queen;
+    font-size: 25px;
+}
+
+.thumbnail .caption .content{
+    width: 100%;
+    padding: 10px 5px 0px 5px;
+    text-align: justify;
+    min-height: 120px;
+    align-items: center;
+    display: flex;
+}
+
+#ribbon{
+    color: #ffffff;
+    font:36px FFF_Tusj;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    background-color: #0c7882;
+    margin: 25px 0;
+}
+
+#ribbon:before{
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(../images/bg_ribbinPseudo.png) 0 0 no-repeat;
+    width: 27px;
+    height: 58px;
+    left: -27px;
+    top: 7px;
+}
+
+#ribbon:after{
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(../images/bg_ribbinPseudo.png) -38px 0 no-repeat;
+    width: 27px;
+    height: 58px;
+    right: -27px;
+    top: 7px;
+    left: auto;
+}
+
+header.atv {
+  position: relative;
+  background-color: #ffffff;
+  background: url(../images/infantil3.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+.atv{
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header.back2{
+    background: url(../images/infantil4.jpg) no-repeat center bottom;
+}
+
+header.back3{
+    background: url(../images/infantil2.jpg) no-repeat 0px -500px;
+    background-size: cover;
+}
+
+.atv p{
+    font-size: 20px;
+    font-family: helvetica;
+    color: #343a40;
+}
+
+.atv label{
+    font-size: 20px;
+    font-family: Gloria;
+}
+
+.atv h1{
+    font-family: FFF_Tusj, Gloria;
+    font-size: 40px;
+    color: #343a40;
+}
+
+.atv h2{
+    font-family: Gloria;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.atv input[type=radio]{
+    width: 20px;
+    height: 20px;
+}
+
+.atv input[type=button]{
+    font-family: Gloria;
+    font-size: 20px;
+}
+
+.atv input[type=text]{
+    width: 20px;
+    color: #000;
+}
+
+.atv img{
+    height: 130px;
+    margin-top: 10px;
+}
+
+.atv .margin {
+    padding: 5px; 
+}
+
+.carousel-control{
+    width: 5%;
+}

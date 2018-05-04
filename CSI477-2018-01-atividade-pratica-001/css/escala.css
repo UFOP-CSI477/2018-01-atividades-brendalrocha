@@ -1,0 +1,122 @@
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+nav .left{
+  float: left;
+}
+nav .right{
+  float: right;
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../images/terra.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+footer{
+    background-color: #181b46;
+    margin: auto;
+}
+
+footer p{
+  float: right; 
+  font-size: 18px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+.btn-primary{
+  background-color: #181b46;
+  border-color: #7b7d8e;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#terremotos, #richter, #calculo{
+  text-align: justify;
+}
+
+thead{
+  font-weight: bold;
+}
+
+td.column1{
+  width: 25%;
+}
+
+.bkg1{
+  background-color: #00AB00;
+}
+
+.bkg2{
+  background-color: #E6D202;
+}
+
+.bkg3{
+  background-color: #DF9F33;
+}
+
+.bkg4{
+  background-color: #D2692F;
+}
+
+.bkg5{
+  background-color: #D13632;
+}
+
+.bkg6{
+  background-color: #C80E40;
+}
+
+#richter .space{
+  padding-left: 0;
+}
+
+#richter img{
+  padding-left: 0;
+  padding-right: 0;
+}

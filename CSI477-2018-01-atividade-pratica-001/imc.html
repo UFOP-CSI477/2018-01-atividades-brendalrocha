@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cálculo do IMC</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/imc.css">
+	<script src="./jquery/jquery-3.3.1.js"></script>
+	<script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<script src="./jquery/imc.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<a href="escala.html" class="navbar-brand left">Escala Richter</a>
+			<a href="imc.html" class="navbar-brand right">Cálculo IMC</a></p>
+		</div>
+	</nav>
+
+	<header class="masthead">
+		<div class="overlay"></div>
+		<div class="container-fluid">
+			<h1>Índice de Massa Corporal (IMC)</h1>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>O que é IMC?</h2>
+					<p>IMC é a sigla para Índice de Massa Corporal. É uma medida internacional que serve para definir se uma pessoa está em seu peso ideal, abaixo ou acima dele.</p>
+
+					<p>Estar em um peso diferente do ideal para sua altura pode trazer alguns riscos. Ter um peso abaixo do recomendado pode ser causado por desnutrição, levando a estresse e fadiga em casos mais leves até insuficiência cardíaca nos casos mais graves.</p>
+
+					<p>Sobrepeso também é um fator de risco. Estar um pouco acima do peso pode dificultar um pouco a circulação enquanto a obesidade pode trazer maiores riscos de diabetes, AVC e infarto.</p>
+
+					<p>Segundo a Organização Mundial de Saúde (OMS), o índice normal é entre 18.5 e 24.9, para outros valores consulte a <a href="#detalhes">tabela abaixo</a>.</p>
+					
+					<a href="#calculo" class="btn btn-primary">Quero calcular meu IMC e saber sobre meu peso ideal</a>
+				</div>
+				<div class="col-md-6">
+					<img src="images/imc.png" width="100%">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="detalhes" id="detalhes">
+		<div class="container-fluid">
+			<div class="col-md-7 text-center">
+				<h2>Como calcular o IMC?</h2>
+				<p>A fórmula usada para o cálculo do IMC é o <strong>peso(kg)</strong> dividido pela <strong>altura(m) ao quadrado</strong>. Como na equação:</p>
+				<img src="images/math_imc.png" width="30%">
+				<h2>Como calcular o peso ideal?</h2>
+				<p>Esta fórmula de IMC é uma simplificação para que todos possam usar de forma fácil, sendo a mais utilizada atualmente. Mas existem fórmulas mais complexas e precisas <strong>para homens</strong> como a apresentada pelo <strong>Dr. Devine</strong> em 1974 mas sabe-se que <strong>geralmente indica um peso ideal muito baixo para mulheres</strong> e principalmente, valores impossíveis para mulheres baixas.</p>
+				<p>Portanto no <strong>caso das mulheres</strong> seria indicado uma outra fórmula, do <strong>Dr. JD Robinson</strong> que em 1983 apresentou uma modificação mais indicada para o índice de massa corporal das mulheres.</p>
+
+
+				<table class="table">
+					<thead>
+						<tr>
+							<td>Sexo/Fórmula</td>
+							<td>Dr. Devine</td>
+							<td>Dr. Robinson</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Homem</strong></td>
+							<td>Peso Ideal = 50 kg + 2,3 kg para cada 2,54cm acima dos 152,4 cm</td>
+							<td>Peso Ideal = 52 kg + 1,9 kg para cada 2,54 cm acima dos 152,4 cm</td>
+						</tr>
+						<tr>
+							<td><strong>Mulher</strong></td>
+							<td>Peso Ideal = 45,5 kg + 2,3 kg para cada 2,54cm acima dos 152,4 cm</td>
+							<td>Peso Ideal = 49 kg + 1,7 kg para cada 2,54 cm acima dos 152,4 cm</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-5">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<td class="td1">IMC</td>
+							<td>Classificação</td>
+							<td>Possíveis consequências</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="td1">Abaixo de 18.5</td>
+							<td>Subnutrição</td>
+							<td><strong>Magreza grave(< 16): </strong>Insuficiência cardíaca, anemia grave, enfraquecimento do sistema imunológico.<br>
+								<strong>Magreza moderada (< 17): </strong>Infertilidade, queda de cabelo, falta da menstruação.<br>
+								<strong>Magreza leve (< 18.5): </strong>Estresse, ansiedade, fadiga</td>
+						</tr>
+						<tr>
+							<td class="td1">Entre 18.5 e 24.9</td>
+							<td>Peso Saudável</td>
+							<td>Menor risco para doenças</td>
+						</tr>
+						<tr>
+							<td class="td1">Entre 25.0 e 29.9</td>
+							<td>Sobrepeso</td>
+							<td>Fadiga, varizes, má circulação</td>
+						</tr>
+						<tr>
+							<td class="td1">Entre 30.0 e 34.9</td>
+							<td>Obesidade grau 1</td>
+							<td>Diabetes, infarto, angina, aterosclerose</td>
+						</tr>
+						<tr>
+							<td class="td1">Entre 35.0 e 39.9</td>
+							<td>Obesidade grau 2</td>
+							<td>Apneia do sono, falta de ar</td>
+						</tr>
+						<tr>
+							<td class="td1">Acima de 40.0</td>
+							<td>Obesidade grau 3</td>
+							<td>Refluxo, infarto, AVC, dificuldade de locomoção, escaras</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="calculo" id="calculo">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Cálculo do IMC</h2>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="peso" class="col-sm-2 control-label">Peso: </label>
+							<div class="input-group col-sm-8">
+								<input type="text" name="peso" class="form-control" placeholder="Ex: 55.5">
+								<div class="input-group-addon">kg</div>
+						    </div>
+						</div>
+						<div class="form-group">
+							<label for="altura" class="col-sm-2 control-label">Altura: </label>
+							<div class="input-group col-sm-8">
+								<input type="text" name="altura" class="form-control" placeholder="Ex: 165.5">
+								<div class="input-group-addon">cm</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2">
+								<input type="button" class="btn btn-primary" value="Calcular" name="calcular">
+							</div>
+						</div>
+					</form>
+					<div class="alert alert-danger" style="display: none; text-align: center;" id="alert"></div>
+				</div>
+				<div class="col-md-8" id="resultados">
+					<h2>Resultados</h2>
+					<div class="row row-border">
+						<p class="title">IMC</p>
+						<div class="col-md-6">
+							<p><strong>Seu IMC: </strong><span id="imc-result" style="display: none;"></span></p>
+						</div>
+						<div class="col-md-6">
+							<p><strong>Classificação: </strong><span id="classificacao-result" style="display: none;"></span></p>
+						</div>
+					</div>
+					<div class="row row-border">
+						<p class="title">Peso ideal considerando as fórmulas do Dr. Devine e Dr. Robinson</p>
+						<div class="col-md-6">
+							<p><strong>Mulheres: </strong><span id="peso-mulheres-result" style="display: none;"></span> kg</p>
+						</div>
+						<div class="col-md-6">
+							<p><strong>Homens: </strong><span id="peso-homens-result" style="display: none;"></span> kg</p>
+						</div>
+					</div>
+					<div class="row row-border">
+						<p class="title">Faixa de peso ideal segundo a OMS</p>
+						<div class="col-md-6">
+							<p class="subtitle">Mulheres</p>
+							<div class="item col-md-6">
+								<p><strong>Mínimo: </strong><span id="peso-min-mulheres-result" style="display: none;"></span> kg</p>
+							</div>
+							<div class="item col-md-6">
+								<p><strong>Máximo: </strong><span id="peso-max-mulheres-result" style="display: none;"></span> kg</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<p class="subtitle">Homens</p>
+							<div class="item col-md-6">
+								<p><strong>Mínimo: </strong><span id="peso-min-homens-result" style="display: none;"></span> kg</p>
+							</div>
+							<div class="item col-md-6">
+								<p><strong>Máximo: </strong><span id="peso-max-homens-result" style="display: none;"></span> kg</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container-fluid">
+			<p class="left">Fonte: <a href="https://minutosaudavel.com.br/como-calcular-imc/">IMC</a>, <a href="http://www.calcularpesoideal.com.br">Calcular Peso Ideal</a>, <a href="https://www.copacabanarunners.net/tabela-peso-ideal-imc.html">Tabela de peso ideal utilizando os critérios da OMS</a>, <a href="http://www.abran.org.br/cnnutro2016/areadoaluno/arquivos_aula_pratica/antropometria.pdf">Cálculo de faixa de peso ideal</a></p>
+			<p class="right">Brenda Lima Rocha - 13.2.8369</p>
+		</div>
+	</footer>
+
+</body>
+</html>

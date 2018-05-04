@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Escala Richter</title>
+
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/escala.css">
+	<script src="./jquery/jquery-3.3.1.js"></script>
+	<script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<script src="./jquery/escala.js"></script>
+	<script src="./js/Chart.bundle.js"></script>
+	<script src="./js/util.js"></script>
+	<script src="./js/chart.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<a href="escala.html" class="navbar-brand left">Escala Richter</a>
+			<a href="imc.html" class="navbar-brand right">Cálculo IMC</a></p>
+		</div>
+	</nav>
+
+	<header class="masthead text-center">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-9 mx-auto">
+					<h1 class="mb-5">A escala mais conhecida para determinar qual a intensidade de um terremoto é a <strong>Escala Richter</strong>. Essa escala foi desenvolvida por Charles F. Richter em 1935 no Instituto de Tecnologia da Califórnia a partir do estudo de cerca de 200 terremotos ao ano.</h1>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 35px;">
+				<div class="col-xl-9 mx-auto">
+					<div class="col-12 col-md-4">
+						<a href="#terremotos" class="btn btn-primary">Como acontecem os terremotos?</a>
+					</div>
+					<div class="col-12 col-md-4">
+						<a href="#richter" class="btn btn-primary">A Escala Richter</a>
+					</div>
+					<div class="col-12 col-md-4">
+						<a href="#calculo" class="btn btn-primary">Calcular intensidade</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="terremotos">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<h1>Como acontecem os terremotos?</h1>
+					<p>Terremotos, também chamados de abalos sísmicos, são tremores passageiros que ocorrem na superfície terrestre. Esse fenômeno natural pode ser desencadeado por fatores como atividade vulcânica, falhas geológicas e, principalmente, pelo encontro de diferentes placas tectônicas.<p>
+
+					<p>Conforme a teoria da Deriva Continental, a crosta terrestre é uma camada rochosa fragmentada, ou seja, ela é formada por vários blocos, denominados placas litosféricas ou placas tectônicas. Esses gigantescos blocos estão em constante movimento, podendo se afastar (zona de divergência) ou se aproximar (originando uma zona de convergência).</p>
+
+					<p>Nas zonas de convergência pode ocorrer o encontro (colisão) entre diferentes placas tectônicas ou a subducção (uma placa mais densa “mergulha” sob uma menos densa). Esses fatos produzem acúmulo de pressão e descarga de energia, que se propaga em forma de ondas sísmicas, caracterizando o terremoto.</p>
+
+					<p>O local onde há o encontro entre as placas tectônicas é chamado de hipocentro (no interior da Terra) e o epicentro é o ponto da superfície acima do hipocentro. As consequências podem ser sentidas a quilômetros de distância, dependendo da proximidade da superfície que ocorreu a colisão (hipocentro) e da magnitude do terremoto.</p>
+
+					<p>Entre os efeitos de um terremoto de grande magnitude em áreas povoadas estão a destruição da infraestrutura (ruas, estradas, pontes, casas, etc.), além de mortes. Os sismos nos oceanos provocam a formação de ondas gigantes (tsunamis). Essas ondas podem atingir as áreas continentais, gerando grande destruição.</p>
+
+					<p>Milhares de terremotos ocorrem diariamente no mundo. No entanto, a maioria apresenta baixa intensidade e tem hipocentro muito profundo, sendo assim, os terremotos são pouco percebidos na superfície terrestre. O Japão, localizado em uma zona muito sísmica, é atingido por centenas de terremotos por dia.</p>
+
+					<p>Os lugares mais atingidos por terremotos são os territórios localizados em zonas de convergência de placas, em especial os países situados nos limites das placas tectônicas. Entre as nações que estão nessa situação podemos destacar o Japão, Indonésia, Índia, Filipinas, Papua Nova Guiné, Turquia, Estados Unidos da América, Haiti, Chile, entre outras.</p>
+
+					<p>Fonte: <a href="https://brasilescola.uol.com.br/geografia/terremotos.htm">Brasil Escola</a></p>
+
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="images/placas-tectonicas.jpg" style="width: 100%;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div id="richter">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-7">
+					<h1>Escala Richter</h1>
+					<div class="col-12 col-md-5 space">
+						<img src="images/sismograma.jpg" class="col-md-12">
+					</div>
+					<div class="col-12 col-md-7 space">
+						<p>A Escala Richter, por definição, é uma escala logarítmica. Isso quer dizer, por exemplo, que um tremor de intensidade cinco é 10 vezes mais forte que um de escala quatro e, consequentemente, 100 vezes mais forte que um de nível três. A magnitude M é calculada usando a seguinte equação:</p>
+						<img src="images/math.png" class="col-md-12">
+						<p>M é a magnitude do terremoto</p>
+						<p>A é a amplitude (em milímetros) medida com um sismógrafo</p>
+						<p>&Delta;t é o intervalo de tempo (em segundos) entre a onda superficial (S) e a ond de pressão máxima (P).</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-5 space">
+					<table class="table table-bordered table-condensed">
+						<thead>
+							<tr>
+								<td class="column1">Magnitude Richter</td>
+								<td>Efeitos</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="column1">Menor que 3,5</td>
+								<td>Geralmente não sentido, mas gravado.</td>
+							</tr>
+							<tr>
+								<td class="column1">Entre 3,5 e 5,4</td>
+								<td>Às vezes sentido, mas raramente causa danos.</td>
+							</tr>
+							<tr>
+								<td class="column1">Entre 5,5 e 6,0</td>
+								<td>No máximo causa pequenos danos a prédios bem construídos, mas pode danificar seriamente casas mal construídas em regiões próximas.</td>
+							</tr>
+							<tr>
+								<td class="column1">Entre 6,1 e 6,9</td>
+								<td>Pode ser destrutivo em áreas em torno de até 100km do epicentro.</td>
+							</tr>
+							<tr>
+								<td class="column1">Entre 7,0 e 7,9</td>
+								<td>Grande terremoto. Pode causar sérios dandos numa grande faixa.</td>
+							</tr>
+							<tr>
+								<td class="column1">Entre 8,0 ou mais</td>
+								<td>Enorme terremoto. Pode causar graves danos em muitas áreas mesmo que estejam a centenas de quilômetros.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div id="calculo">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<h1>Cálculo de Magnitude</h1>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="amplitude" class="col-sm-6 control-label">Amplitude (A em mm):</label>
+							<div class="col-sm-6">
+								<input type="text" name="amplitude" class="form-control">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="deltat" class="col-sm-6 control-label">Intervalo de Tempo (&Delta;t em segundos):</label>
+							<div class="col-sm-6">
+								<input type="text" name="deltat" class="form-control">
+							</div>
+						</div>
+						<div class="form-group">
+						    <div class="col-sm-offset-6 col-sm-6">
+						      <input type="button" class="btn btn-primary" value="Calcular" name="calcular">
+						    </div>
+						</div>
+					</form>
+					<div class="row" style="text-align: center;" id="resultado">
+						<h3>Resultado obtido</h3>
+						<div class="col-md-6">
+							<label for="magnitude">Magnitude (M) = </label>
+							<span name="magnitude" id="magnitude"></span>
+						</div>
+						<div class="col-md-6">
+							<p class="col-md-6">Área do gráfico:</p>
+							<div class="col-md-6" style="height: 20px;" id="escala-cor"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="alert alert-danger" style="display: none; text-align: center;" id="alert"></div>
+					<div>
+						<canvas id="canvas"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container-fluid">
+			<p class="footer">Brenda Lima Rocha - 13.2.8369</p>
+		</div>
+	</footer>
+
+</body>
+</html>
