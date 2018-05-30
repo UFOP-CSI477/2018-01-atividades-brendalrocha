@@ -1,0 +1,51 @@
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-inverse{
+	color: #9d9d9d;
+}
+
+.top{
+	margin-top: 20px;
+}
+
+.panel{
+	margin:auto;
+	width: 50%;
+}
+
+footer{
+    right: 0;
+    left: 0;
+	bottom: 0;
+	margin-top: 20px;
+    padding-top: 10px;
+    padding-right: 30px;
+    border-width: 1px 0 0;
+    background-color: #222;
+    border-color: #080808;
+   	color: #9d9d9d;
+ }
+
+footer .right{
+	text-align: right;
+}
+
+
+.logo{
+	background-image: url("../images/molecula2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 55px;
+    background-position: left;
+}
+
+.body{
+	background: url("../images/slider2.jpg") no-repeat;
+	background-size: cover;
+	height: -webkit-fill-available;
+	width:100%;
+	margin-top: -20px;
+}
