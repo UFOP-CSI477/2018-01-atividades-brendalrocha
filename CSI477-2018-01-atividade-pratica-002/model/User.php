@@ -26,7 +26,7 @@ class User{
 		$this->email = $email;
 		$this->password = $password;
 		$this->remember_token = $remember_token;
-		$this->type = 3;
+		$this->type = 0;
 	}
 
 	public function all(){
@@ -45,7 +45,7 @@ class User{
 	}
 
 	public function pacientes(){
-		$sql = "SELECT * FROM users WHERE type=3 ORDER BY name";
+		$sql = "SELECT * FROM users WHERE type=0 ORDER BY name";
 		return $this->db->query($sql);
 	}
 

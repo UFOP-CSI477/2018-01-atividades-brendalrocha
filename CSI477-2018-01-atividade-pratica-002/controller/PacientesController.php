@@ -31,7 +31,7 @@ class PacientesController{
 			$password = $request['password'];
 
 			$paciente = new User();
-			$login = $paciente->select($email,$password,3);
+			$login = $paciente->select($email,$password,0);
 
 			//var_dump($login->rowCount());
 
@@ -47,7 +47,7 @@ class PacientesController{
 					$_SESSION['logado'] = $id;
 
 
-					if($linha['type']==3){
+					if($linha['type']==0){
 						$procedimentos = new Procedimento();
 						$lista = $procedimentos->all();
 
@@ -84,7 +84,7 @@ class PacientesController{
 				$paciente->setEmail($email);
 				$paciente->setPassword($password);
 				$paciente->setRememberToken($remember_token);
-				$paciente->setType(3);
+				$paciente->setType(0);
 				$paciente->save();
 				
 				$_SESSION['mensagem'] = "Olá " . $name . "! Seja bem vindo ao nosso sistema! <br> Efetue o login para solicitar exames!";
